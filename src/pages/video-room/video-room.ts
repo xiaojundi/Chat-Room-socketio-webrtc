@@ -15,12 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VideoRoomPage {
 
-  public my_videogateway: any = null;
-  server:any  = ["https://example.com:HTTPS_PORT/webrtc-gateway"];
-  iceServers:any  = [ ];
-  debugLevel:any = 'error';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    var myVideoApp = new VideoRTC(endPoints, iceServers, debugLevel);
   }
 
   ionViewDidLoad() {
